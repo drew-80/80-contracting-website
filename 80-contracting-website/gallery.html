@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work | 80 Contracting</title>
+<link rel="stylesheet" href="styles/style.css">
+<style>
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+margin: 3rem 0;
+}
+
+.gallery-item {
+background: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+transform: translateY(-5px);
+}
+
+.gallery-image {
+width: 100%;
+height: 250px;
+background: var(--light-bg);
+display: flex;
+align-items: center;
+justify-content: center;
+color: #666;
+font-size: 1.1rem;
+}
+
+.gallery-content {
+padding: 1.5rem;
+}
+
+.gallery-content h3 {
+color: var(--secondary-color);
+margin-bottom: 0.5rem;
+}
+
+.project-categories {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin: 2rem 0;
+flex-wrap: wrap;
+}
+
+.category-btn {
+padding: 10px 20px;
+background: var(--light-bg);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.category-btn.active {
+background: var(--primary-color);
+color: white;
+}
+</style>
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="nav-container">
+<div class="logo">
+<h2><a href="index.html" style="text-decoration: none; color: inherit;">80 Contracting</a></h2>
+</div>
+<ul class="nav-menu">
+<li><a href="index.html" class="nav-link">Home</a></li>
+<li><a href="services.html" class="nav-link">Services</a></li>
+<li><a href="gallery.html" class="nav-link">Our Work</a></li>
+<li><a href="about.html" class="nav-link">About Us</a></li>
+<li><a href="contact.html" class="nav-link">Contact</a></li>
+</ul>
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</nav>
+</header>
+
+<section class="services-preview" style="padding: 120px 0 80px; margin-top: 70px;">
+<div class="container">
+<h1>Our Work</h1>
+<p class="text-center" style="font-size: 1.2rem; margin-bottom: 1rem;">See examples of our quality craftsmanship and completed projects</p>
+
+<div class="project-categories">
+<button class="category-btn active" data-category="all">All Projects</button>
+<button class="category-btn" data-category="remodeling">Remodeling</button>
+<button class="category-btn" data-category="construction">Construction</button>
+<button class="category-btn" data-category="repairs">Repairs</button>
+</div>
+
+<div class="gallery-grid">
+<div class="gallery-item" data-category="remodeling">
+<div class="gallery-image">
+[Kitchen Remodel Photo]
+</div>
+<div class="gallery-content">
+<h3>Modern Kitchen Renovation</h3>
+<p>Complete kitchen overhaul with custom cabinets, quartz countertops, and modern appliances.</p>
+<p><strong>Project Type:</strong> Kitchen Remodel</p>
+</div>
+</div>
+
+<div class="gallery-item" data-category="construction">
+<div class="gallery-image">
+[Deck Construction Photo]
+</div>
+<div class="gallery-content">
+<h3>Custom Backyard Deck</h3>
+<p>Beautiful pressure-treated wood deck with built-in seating and lighting.</p>
+<p><strong>Project Type:</strong> Deck Construction</p>
+</div>
+</div>
+
+<div class="gallery-item" data-category="remodeling">
+<div class="gallery-image">
+[Bathroom Remodel Photo]
+</div>
+<div class="gallery-content">
+<h3>Luxury Bathroom Remodel</h3>
+<p>Spa-like bathroom transformation with walk-in shower and custom tile work.</p>
+<p><strong>Project Type:</strong> Bathroom Remodel</p>
+</div>
+</div>
+
+<div class="gallery-item" data-category="construction">
+<div class="gallery-image">
+[Room Addition Photo]
+</div>
+<div class="gallery-content">
+<h3>Sunroom Addition</h3>
+<p>Bright and airy sunroom addition with energy-efficient windows.</p>
+<p><strong>Project Type:</strong> Room Addition</p>
+</div>
+</div>
+
+<div class="gallery-item" data-category="repairs">
+<div class="gallery-image">
+[Structural Repair Photo]
+</div>
+<div class="gallery-content">
+<h3>Structural Foundation Repair</h3>
+<p>Comprehensive foundation repair and reinforcement for long-term stability.</p>
+<p><strong>Project Type:</strong> Structural Repair</p>
+</div>
+</div>
+
+<div class="gallery-item" data-category="remodeling">
+<div class="gallery-image">
+[Basement Finishing Photo]
+</div>
+<div class="gallery-content">
+<h3>Basement Finishing</h3>
+<p>Unfinished basement transformed into a comfortable living space with bedroom and bathroom.</p>
+<p><strong>Project Type:</strong> Basement Finishing</p>
+</div>
+</div>
+</div>
+
+<div class="text-center" style="margin-top: 3rem;">
+<h3>Ready to Start Your Project?</h3>
+<p>Let us help bring your vision to life with the same quality and care shown in our portfolio.</p>
+<a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;">Start Your Project</a>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-section">
+<h3>80 Contracting</h3>
+<p>Quality contracting services for your home or business.</p>
+</div>
+<div class="footer-section">
+<h4>Contact Info</h4>
+<p>📞 <a href="tel:555-123-4567">(555) 123-4567</a></p>
+<p>✉️ <a href="mailto:contact@80contracting.com">contact@80contracting.com</a></p>
+</div>
+<div class="footer-section">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Our Work</a></li>
+<li><a href="contact.html">Get Estimate</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2024 80 Contracting. All rights reserved. | Licensed & Insured</p>
+</div>
+</div>
+</footer>
+
+<script>
+// Simple gallery filtering
+document.addEventListener('DOMContentLoaded', function() {
+const categoryBtns = document.querySelectorAll('.category-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+categoryBtns.forEach(btn => {
+btn.addEventListener('click', function() {
+// Remove active class from all buttons
+categoryBtns.forEach(b => b.classList.remove('active'));
+// Add active class to clicked button
+this.classList.add('active');
+
+const category = this.getAttribute('data-category');
+
+// Show/hide gallery items based on category
+galleryItems.forEach(item => {
+if (category === 'all' || item.getAttribute('data-category') === category) {
+item.style.display = 'block';
+} else {
+item.style.display = 'none';
+}
+});
+});
+});
+});
+</script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
