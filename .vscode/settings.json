@@ -1,0 +1,7 @@
+{
+    "claudeCode.allowDangerouslySkipPermissions": true,
+    "claudeCode.useCtrlEnterToSend": true,
+    "claudeCode.useTerminal": true,
+    "claudeCode.respectGitIgnore": false,
+    "chat.suspendThrottling": false
+}
